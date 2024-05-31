@@ -26,11 +26,17 @@ b {
 /* navbar */
 nav {
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
   height: 75px;
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.changed-nav {
+  background-color: white;
 }
 
 nav a {
@@ -50,10 +56,17 @@ nav svg {
 
 nav a:last-of-type {
   color: white;
-  background-color: #191919;
   padding: 0.7em 1em;
   border-radius: 30px;
-  transition: background-color;
+  transition: background-color 0.8s;
+}
+
+.black-button {
+  background-color: #191919;
+}
+
+.changed-button {
+  background-color: #1a8917;
 }
 
 /* hero */
@@ -68,7 +81,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   row-gap: 2em;
-  height: 50vh;
+  height: 60vh;
 }
 
 header h1 {
@@ -148,6 +161,9 @@ header h1 {
   align-items: center;
 }
 
+#content {
+  column-gap: 50px;
+}
 /* articles list */
 #latest-articles {
   width: 60%;
@@ -199,4 +215,39 @@ header h1 {
   width: 30%;
   object-fit: cover;
   flex-shrink: -1;
+}
+
+/* Aside */
+aside {
+  width: 30%;
+  font-size: 0.9em;
+}
+
+aside h3 {
+  font-weight: bold;
+}
+
+.topics {
+  flex-wrap: wrap;
+  padding: 1em 1em 2em 0;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 2em;
+  gap: 10px;
+}
+
+.topics a {
+  text-decoration: none;
+  color: #191919;
+  padding: 0.8em;
+  border: 1px solid #e2e2e2;
+}
+
+.info {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info a {
+  text-decoration: none;
+  color: #191919;
 }
