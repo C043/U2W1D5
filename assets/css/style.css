@@ -110,6 +110,10 @@ header h1 {
   margin-bottom: 3em;
 }
 
+#trending h2 {
+  font-weight: bold;
+}
+
 #trending-header {
   align-items: center;
   gap: 0.5em;
