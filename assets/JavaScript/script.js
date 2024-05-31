@@ -5,15 +5,12 @@ const mAnimation = setInterval(() => {
   const currentOpacity = currentElement.getAttributeNS(null, "opacity");
   if (currentOpacity === "0") {
     currentElement.setAttributeNS(null, "opacity", 1);
-    console.log("on", currentElement);
   } else if (currentOpacity === "1") {
     currentElement.setAttributeNS(null, "opacity", 0);
-    console.log("off", currentElement);
   }
 }, 10);
 
-window.onscroll = (event) => {
-  console.log(event);
+window.onscroll = () => {
   const nav = document.querySelector("nav");
   const getStarted = document.querySelector("nav a:last-of-type");
   if (window.scrollY > 350) {
