@@ -1,3 +1,17 @@
+const mAnimation = setInterval(() => {
+  const mElements = document.getElementsByTagName("g");
+  const randomNum = Math.floor(Math.random() * mElements.length) + 2;
+  const currentElement = mElements[randomNum];
+  const currentOpacity = currentElement.getAttributeNS(null, "opacity");
+  if (currentOpacity === "0") {
+    currentElement.setAttributeNS(null, "opacity", 1);
+    console.log("on", currentElement);
+  } else if (currentOpacity === "1") {
+    currentElement.setAttributeNS(null, "opacity", 0);
+    console.log("off", currentElement);
+  }
+}, 10);
+
 window.onscroll = (event) => {
   console.log(event);
   const nav = document.querySelector("nav");
@@ -12,3 +26,5 @@ window.onscroll = (event) => {
     getStarted.classList.add("black-button");
   }
 };
+
+window.onload = mAnimation;
