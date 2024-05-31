@@ -57,6 +57,11 @@ nav a {
   color: #191919;
 }
 
+#nav-anchors {
+  align-items: center;
+  column-gap: 20px;
+}
+
 nav .container {
   column-gap: 20px;
   align-items: center;
@@ -80,6 +85,25 @@ nav a:last-of-type {
 
 .changed-button {
   background-color: #1a8917;
+}
+
+@media screen and (max-width: 430px) {
+  nav a:not(nav a:last-of-type, nav a:nth-of-type(4)) {
+    display: none;
+  }
+  #nav-content {
+    justify-content: space-between;
+  }
+  #nav-anchors {
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+  nav svg {
+    width: 8em;
+  }
+  nav a {
+    font-size: 0.8em;
+  }
 }
 
 /* hero */
@@ -144,6 +168,20 @@ header h1 {
   }
   #hero h1 {
     font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #m-animation {
+    display: none;
+  }
+
+  #hero {
+    padding: 9em 0 5em 0;
+  }
+
+  #hero h1 {
+    font-size: 4em;
   }
 }
 
@@ -231,6 +269,12 @@ main {
   }
 }
 
+@media screen and (max-width: 430px) {
+  .trend-card {
+    width: 95%;
+  }
+}
+
 #content {
   column-gap: 50px;
   align-items: flex-start;
@@ -286,7 +330,7 @@ main {
 .article-image {
   width: 30%;
   object-fit: cover;
-  flex-shrink: -1;
+  flex-shrink: 0;
 }
 
 /* Aside */
@@ -343,5 +387,29 @@ aside h3 {
     width: 100%;
     margin-bottom: 3em;
     order: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .article-card {
+    column-gap: 10px;
+  }
+  .article-card .author p {
+    font-size: 0.7em;
+  }
+  .article-card h3 {
+    font-size: 1.1em;
+  }
+  .preview {
+    font-size: 0.9em;
+  }
+  .article-image {
+    width: 40%;
+  }
+  .article-structure {
+    width: 100%;
+  }
+  .article-card .details {
+    font-size: 0.7em;
   }
 }
