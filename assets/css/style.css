@@ -149,6 +149,7 @@ header h1 {
   color: white;
   padding: 0.7em 3em;
   border-radius: 30px;
+  border: none;
   cursor: pointer;
 }
 
