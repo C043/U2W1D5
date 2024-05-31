@@ -163,6 +163,7 @@ header h1 {
 
 #content {
   column-gap: 50px;
+  align-items: flex-start;
 }
 /* articles list */
 #latest-articles {
@@ -219,6 +220,8 @@ header h1 {
 
 /* Aside */
 aside {
+  position: sticky;
+  top: 100px;
   width: 30%;
   font-size: 0.9em;
 }
