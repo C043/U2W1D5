@@ -132,9 +132,9 @@ header h1 {
 
 #m-animation {
   position: absolute;
-  right: 0%;
-  top: 16%;
-  width: 65vh;
+  right: 0;
+  top: 95px;
+  width: 50vw;
   scale: 1.2;
 }
 
@@ -161,9 +161,8 @@ header h1 {
 
 @media screen and (max-width: 800px) {
   #m-animation {
-    right: -46%;
-    top: 50px;
-    scale: 1;
+    right: -23%;
+    top: 136px;
   }
   #hero {
     padding: 10em 0 8em 0;
@@ -326,6 +325,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  line-height: 1.25;
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
