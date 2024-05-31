@@ -25,6 +25,12 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90vw;
+  }
+}
+
 b {
   font-weight: bold;
 }
@@ -127,6 +133,20 @@ header h1 {
   }
 }
 
+@media screen and (max-width: 800px) {
+  #m-animation {
+    right: -46%;
+    top: 50px;
+    scale: 1;
+  }
+  #hero {
+    padding: 10em 0 8em 0;
+  }
+  #hero h1 {
+    font-size: 6em;
+  }
+}
+
 main {
   z-index: 98;
   background-color: white;
@@ -156,7 +176,7 @@ main {
   justify-content: space-between;
 }
 
-.card-container .trend-card {
+.trend-card {
   display: flex;
   column-gap: 20px;
   width: 33%;
@@ -196,10 +216,26 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+  .card-container {
+    column-gap: 1px;
+  }
+  .trend-card {
+    width: 45%;
+  }
+  .trend-card h3 {
+    font-size: 1em;
+  }
+  .trend-card .details {
+    justify-content: space-between;
+  }
+}
+
 #content {
   column-gap: 50px;
   align-items: flex-start;
 }
+
 /* articles list */
 #latest-articles {
   width: 60%;
@@ -299,10 +335,13 @@ aside h3 {
     padding-bottom: 2em;
     margin-bottom: 2em;
     border-bottom: 1px solid #c5c5c5;
+    order: 1;
   }
 
   aside {
+    position: unset;
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    order: 0;
   }
 }
