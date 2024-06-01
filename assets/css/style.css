@@ -132,7 +132,7 @@ header h1 {
 
 #m-animation {
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 95px;
   width: 50vw;
   scale: 1.2;
@@ -155,7 +155,7 @@ header h1 {
 
 @media screen and (max-width: 1024px) {
   #m-animation {
-    right: -25%;
+    right: -15%;
   }
 }
 
