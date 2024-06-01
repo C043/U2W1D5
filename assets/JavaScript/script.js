@@ -2,7 +2,7 @@
 
 const mElements = document.getElementsByTagName("g");
 const mElementsFiltered = Array.from(mElements).filter(
-  (element) => element.getAttribute("opacity") != undefined
+  (element) => element.getAttribute("opacity") === "0"
 );
 mElementsFiltered.shift();
 
