@@ -32,5 +32,3 @@ window.onscroll = () => {
     getStarted.classList.add("black-button");
   }
 };
-
-window.onload = mAnimation;
